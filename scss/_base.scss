@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    column-gap: 30px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.details__counter {
+    display: flex;
+    align-self: center;
+    background-color: $color-light-grey;
+    border-radius: 10px;
+}
+
+.counter-control {
+    padding: 6px 12px;
+    cursor: grab;
+    transition-duration: .2s;
+
+    &:hover {
+        background-color: $color-accent;
+        border-radius: 10px;
+        transition-duration: .2s;
+    }
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.counter-current {
+    padding: 6px 12px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Food shop</title>
+    <link rel="icon" type="image/png" href="/img/icon/hamburger.png" />
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <img src="img/logo/burger.png" width="100" alt="Суши и пицца" />
+      <div class="header-text">Доставка бургерів</div>
+      <p class="header-subtext">Оперативно та смачно</p>
+    </header>
+
+    <main class="wrapper">
+      <section class="catalog">
+        <ul class="catalog-items"></ul>
+      </section>
+      <aside class="shopping">
+        <div class="shopping-wrapper">
+          <ul class="shopping-items">
+            <li class="shopping-item">
+              <span class="shopping-item__name">Ваше замовлення</span>
+              <div class="shopping-item__order">
+                <img src="/img/burger.png" alt="бургер" class="order__image" />
+                <div class="order-description">
+                  <span class="order-description__name">Барбекю Бургер</span>
+                  <div class="catalog-item__details">
+                    <div class="details__counter">
+                      <div class="counter-control" data-action="minus">-</div>
+                      <div class="counter-current" data-counter>1</div>
+                      <div class="counter-control" data-action="plus">+</div>
+                    </div>
+                    <div class="details__price">
+                      <div class="price__weight">250г.</div>
+                      <div class="price__currency">350 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-item__order">
+                <img src="/img/burger.png" alt="бургер" class="order__image" />
+                <div class="order-description">
+                  <span class="order-description__name">Барбекю Бургер</span>
+                  <div class="catalog-item__details">
+                    <div class="details__counter">
+                      <div class="counter-control" data-action="minus">-</div>
+                      <div class="counter-current" data-counter>1</div>
+                      <div class="counter-control" data-action="plus">+</div>
+                    </div>
+                    <div class="details__price">
+                      <div class="price__weight">250г.</div>
+                      <div class="price__currency">350 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="shopping-item__name"
+                >Сума: <strong>700 грн</strong></span
+              >
+            </li>
+          </ul>
+          <div class="make-order">
+            <span class="make-order__name">Оформити замовлення</span>
+            <input
+              type="tel"
+              placeholder="Введіть номер телефона"
+              class="make-order__input"
+            />
+            <input type="submit" class="make-order__button" />
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="/ts-built/catalog.js"></script>
+    <script src="/ts-built/app.js"></script>
+    <script src="/ts-built/counter.js"></script>
+  </body>
+</html>
