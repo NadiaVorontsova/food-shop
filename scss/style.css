@@ -101,7 +101,7 @@ body {
 .catalog-item__details {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .details__price {
@@ -116,7 +116,7 @@ body {
 .catalog-item__button {
   margin: 20px 20px 0 20px;
   border: 1px rgb(31, 139, 7) solid;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px 0;
   color: rgb(72, 72, 72);
   font-size: 16px;
@@ -140,9 +140,14 @@ body {
   row-gap: 25px;
 }
 
+.shopping-item__name {
+  width: 280px;
+}
+
 .shopping-item__order {
   display: grid;
   grid-template-columns: 130px 170px;
+  row-gap: 10px;
 }
 
 .order__image {

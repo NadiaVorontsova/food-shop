@@ -1,9 +1,9 @@
 let PRODUCT_LIST = document.querySelector(".catalog-items") as HTMLUListElement;
 
 const render = () => {
-    CATALOG.forEach((product) => {
-        PRODUCT_LIST.innerHTML += `
-        <li class="catalog-item">
+  CATALOG.forEach((product) => {
+    PRODUCT_LIST.innerHTML += `
+        <li class="catalog-item" data-id="${product.id}">
             <img src=${product.img} alt="Бургер" class="catalog-item__image">
             <span class="catalog-item__name">${product.name}</span>
             <span class="catalog-item__description">${product.desc}</span>
@@ -21,7 +21,7 @@ const render = () => {
             <button type="button" class="catalog-item__button" data-cart>Додати в кошик</button>
         </li> 
         `;
-      });
-}
+  });
+};
 
 render();

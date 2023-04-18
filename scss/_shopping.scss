@@ -9,9 +9,14 @@
     row-gap: 25px;
 }
 
+.shopping-item__name {
+    width: 280px;
+}
+
 .shopping-item__order {
     display: grid;
     grid-template-columns: 130px 170px;
+    row-gap: 10px;
 }
 
 .order__image {
