@@ -6,11 +6,11 @@
 
 .shopping-item {
     @extend .catalog-item;
-    row-gap: 25px;
+    row-gap: 20px;
 }
 
 .shopping-item__name {
-    width: 280px;
+    width: 300px;
 }
 
 .shopping-item__order {

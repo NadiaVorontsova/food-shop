@@ -19,6 +19,11 @@ WRAPPER.addEventListener("click", (event: Event) => {
   if (target.dataset.action === "minus") {
     if (parseInt(counter.innerText) > 1) {
       counter.innerText = --counter.innerText;
+    } else if (
+      (target.closest(".shopping-item") as HTMLElement) &&
+      parseInt(counter.innerText) === 1
+    ) {
+      target.closest(".shopping-item__order")?.remove();
     }
   }
 });

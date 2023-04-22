@@ -41,6 +41,7 @@ WRAPPER.addEventListener("click", (event) => {
               `;
                 ORDER_CONTAINER.insertAdjacentHTML("beforeend", cartItemHtml);
             }
+            parseInt((cart.querySelector("[data-counter]").innerText = "1"));
         }
     }
 });

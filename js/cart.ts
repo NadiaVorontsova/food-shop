@@ -59,6 +59,9 @@ WRAPPER.addEventListener("click", (event: Event) => {
               `;
         ORDER_CONTAINER.insertAdjacentHTML("beforeend", cartItemHtml);
       }
+      parseInt(
+        ((cart.querySelector("[data-counter]") as HTMLElement).innerText = "1")
+      );
     }
   }
 });
