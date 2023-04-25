@@ -18,6 +18,12 @@ body {
   margin-bottom: 100px;
 }
 
+@media (min-width: 300px) {
+  .wrapper {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
 .details__counter {
   display: flex;
   align-self: center;
