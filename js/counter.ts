@@ -24,6 +24,7 @@ WRAPPER.addEventListener("click", (event: Event) => {
       parseInt(counter.innerText) === 1
     ) {
       target.closest(".shopping-item__order")?.remove();
+      MAKE_ORDER_CONTAINER.classList.add("hidden");
     }
   }
 });

@@ -1,16 +1,41 @@
+.shopping {
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    width: fit-content;
+}
+
+@media (max-width: 400px) {
+    .shopping {
+        top: 10%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 361px) {
+    .shopping {
+        top: 10%;
+        right: 3%;
+    }
+}
+
 .shopping-wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.shopping-item {
+.shopping-items {
     @extend .catalog-item;
     row-gap: 20px;
 }
 
-.shopping-item__name {
+.shopping-items__name {
     width: 300px;
+}
+
+.shopping-item {
+    list-style-type: none;
 }
 
 .shopping-item__order {

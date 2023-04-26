@@ -1,4 +1,20 @@
-const ORDER_CONTAINER = document.querySelector(".shopping-item") as HTMLElement;
+const ORDER_CONTAINER = document.querySelector(
+  ".shopping-items"
+) as HTMLElement;
+
+const MAKE_ORDER_CONTAINER = document.querySelector(
+  ".make-order"
+) as HTMLElement;
+
+const OPEN_CART_BTN = document.querySelector(
+  ".header-cart"
+) as HTMLButtonElement;
+
+const SHOPPING_WRAPPER = document.querySelector(".shopping") as HTMLElement;
+
+OPEN_CART_BTN.addEventListener("click", (event: Event) => {
+  SHOPPING_WRAPPER.classList.toggle("hidden");
+});
 
 WRAPPER.addEventListener("click", (event: Event) => {
   const target = event.target as HTMLButtonElement;
@@ -39,7 +55,8 @@ WRAPPER.addEventListener("click", (event: Event) => {
           parseInt(counterItemInCart.innerText) + cartInfo.counter
         ).toString();
       } else {
-        const cartItemHtml: string = `<div class="shopping-item__order" data-id="${cartInfo.id}">
+        const cartItemHtml: string = `<li class="shopping-item">
+                <div class="shopping-item__order" data-id="${cartInfo.id}">
                 <img src=${cartInfo.img} alt="бургер" class="order__image" />
                 <div class="order-description">
                 <span class="order-description__name">${cartInfo.title}</span>
@@ -56,12 +73,16 @@ WRAPPER.addEventListener("click", (event: Event) => {
                 </div>
               </div>
               </div>
+              </li>
               `;
         ORDER_CONTAINER.insertAdjacentHTML("beforeend", cartItemHtml);
       }
       parseInt(
         ((cart.querySelector("[data-counter]") as HTMLElement).innerText = "1")
       );
+    }
+    if (ORDER_CONTAINER.children.length > 2) {
+      MAKE_ORDER_CONTAINER.classList.remove("hidden");
     }
   }
 });

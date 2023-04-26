@@ -3,20 +3,18 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    column-gap: 30px;
     width: 80%;
     margin: auto;
     justify-content: center;
     margin-bottom: 100px;
 }
-
+/*
 @media (max-width: $screen-size) {
     .wrapper {
        flex-wrap: wrap;
        row-gap: 20px;
     }
-}
+}*/
 
 .details__counter {
     display: flex;
@@ -43,4 +41,22 @@ body {
 
 .counter-current {
     padding: 6px 12px;
+}
+
+.outline-green {
+    outline: solid $color-lightgreen 2px;
+    border-radius: 3px;
+}
+
+.outline-red {
+    outline: solid $color-accent 2px;
+    border-radius: 3px;
+}
+
+.text-error {
+    color: $color-accent;
+}
+
+.hidden {
+    display:none!important;
 }

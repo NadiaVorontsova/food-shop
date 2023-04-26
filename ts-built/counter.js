@@ -20,6 +20,7 @@ WRAPPER.addEventListener("click", (event) => {
         else if (target.closest(".shopping-item") &&
             parseInt(counter.innerText) === 1) {
             (_a = target.closest(".shopping-item__order")) === null || _a === void 0 ? void 0 : _a.remove();
+            MAKE_ORDER_CONTAINER.classList.add("hidden");
         }
     }
 });

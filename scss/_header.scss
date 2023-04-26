@@ -1,7 +1,9 @@
 .header-container {
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
     padding-bottom: 50px;
-    text-align: center;
 }
 
 .header-text {
@@ -11,4 +13,18 @@
 
 .header-subtext {
     color: $color-unnaccent;
+}
+
+.header-cart {
+    margin-top: 15px;
+    align-self: flex-end;
+    margin-right: 11%;
+    cursor: pointer;
+    transition-duration: .3s;
+
+    &:hover {
+        transform: scale(1.1);
+        rotate: 15deg;
+        transition-duration: .3s;
+    }
 }
